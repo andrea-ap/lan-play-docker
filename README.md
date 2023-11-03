@@ -22,7 +22,7 @@ You will need the following:
 Depending on your Docker client, the following should suffice (make sure to set the config folder to a folder on your host machine):
 
 ```
-docker run -d --name='LanPlayClient' --net='bridge' -v '[YOUR_CONFIG_FOLDER_HERE]':'/config':'rw' 'chrispy212/lan-play-docker'
+docker run -d --name='LanPlayClient' --net='bridge' -v '[YOUR_CONFIG_FOLDER_HERE]':'/config':'rw' 'andrea-ap/lan-play-docker'
 ```
 
 Or if using UnRAID, search and find the Docker image from Dockerhub, and map the path /config to your appdata folder of choice (e.g. /mnt/user/appdata/lan-play-client)
