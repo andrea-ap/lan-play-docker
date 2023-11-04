@@ -24,6 +24,9 @@ Depending on your Docker client, the following should suffice (make sure to set 
 ```
 docker run -d --name='LanPlayClient' --net='bridge' -v '/home/nut':'/config':'rw' --rm 'https://github.com/andrea-ap/lan-play-docker'
 
+docker run -d --name='LanPlayClient' --net=bridge -v '/home/nut:/config:rw' --rm 'https://github.com/andrea-ap/lan-play-docker'
+
+
 ```
 
 Or if using UnRAID, search and find the Docker image from Dockerhub, and map the path /config to your appdata folder of choice (e.g. /mnt/user/appdata/lan-play-client)
