@@ -22,7 +22,7 @@ You will need the following:
 Depending on your Docker client, the following should suffice (make sure to set the config folder to a folder on your host machine):
 
 ```
-docker run -d --name='LanPlayClient' --net='bridge' -v '/home/nut':'/config':'rw' --rm 'andrea-ap/lan-play-docker'
+docker run -d --name='LanPlayClient' --net='bridge' -v '/home/nut':'/config':'rw' --rm 'https://github.com/andrea-ap/lan-play-docker'
 
 ```
 
