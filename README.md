@@ -22,6 +22,26 @@ You will need the following:
 Depending on your Docker client, the following should suffice (make sure to set the config folder to a folder on your host machine):
 
 ```
+# Update package lists
+sudo apt update
+
+# Install gcc, make, perl, and dkms 
+ sudo apt-get install  gcc make perl dkms -y
+
+# Install Python3-pip
+sudo apt install  python3-pip -y
+
+# Install curl
+sudo apt-get install  curl -y
+
+# Scarico script Docker 
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+# Preparo ed installo 
+sh get-docker.sh
+
+
+sudo apt upgrade -y
 sudo docker build --tag andrea-ap/lan-play-docker https://github.com/andrea-ap/lan-play-docker.git
 
 
