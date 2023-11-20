@@ -45,7 +45,7 @@ sudo apt upgrade -y
 
 sudo docker build --tag andrea-ap/lan-play-docker https://github.com/andrea-ap/lan-play-docker.git
 
-docker run -d --name LanPlayClient --net bridge -v /lan:/config:rw --rm andrea-ap/lan-play-docker
+docker run -d --name LanPlayClient --net bridge -v /home/andrea/lan:/config:rw --rm andrea-ap/lan-play-docker
 
 
 
